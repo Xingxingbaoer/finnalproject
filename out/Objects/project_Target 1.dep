@@ -1,5 +1,5 @@
 Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
-F (..\src\user\main.c)(0x59278A47)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\src\user\main.c)(0x592ECE6E)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -7,12 +7,35 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
-I (..\src\hard\oled.h)(0x5927860C)
-I (..\src\hard\adc.h)(0x59278757)
-I (..\src\hard\uart.h)(0x592787AD)
+I (..\src\hard\oled.h)(0x5927EE12)
+I (..\src\hard\ui.h)(0x5927EEBF)
+I (..\src\hard\adc.h)(0x592AC1D3)
+I (..\src\hard\key.h)(0x5927AE7E)
 I (..\src\hard\delay.h)(0x592786AD)
-F (..\src\hard\oled.c)(0x5927860C)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
-I (..\src\hard\oled.h)(0x5927860C)
+I (..\src\hard\uart.h)(0x592BC5A1)
+I (..\src\hard\i2c.h)(0x5927AEE1)
+I (..\src\hard\24c02.h)(0x5927B0CC)
+I (..\src\user\temperature.h)(0x592EA22D)
+F (..\src\user\temperature.c)(0x59303198)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\temperature.o --omf_browse .\objects\temperature.crf --depend .\objects\temperature.d)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x593012CD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\src\hard\adc.h)(0x592AC1D3)
+I (..\src\hard\oled.h)(0x5927EE12)
+I (..\src\hard\uart.h)(0x592BC5A1)
+I (..\src\hard\24c02.h)(0x5927B0CC)
+I (..\src\hard\i2c.h)(0x5927AEE1)
+I (..\src\hard\delay.h)(0x592786AD)
+I (..\src\hard\KEY.H)(0x5927AE7E)
+I (..\src\user\temperature.h)(0x592EA22D)
+F (..\src\hard\oled.c)(0x5927EFDB)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
+I (..\src\hard\oled.h)(0x5927EE12)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.H)(0x4FF4FDF8)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -20,9 +43,9 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x593012CD)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
-F (..\src\hard\delay.c)(0x592786AD)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+F (..\src\hard\delay.c)(0x592786AD)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -31,7 +54,7 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
 I (..\src\hard\delay.h)(0x592786AD)
-F (..\src\hard\adc.c)(0x59278757)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+F (..\src\hard\adc.c)(0x592AC1D3)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -39,18 +62,83 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
-I (..\src\hard\adc.h)(0x59278757)
-F (..\src\hard\uart.c)(0x592787AC)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
-I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\lpc11xx.h)(0x4FF4FDF8)
+I (..\src\hard\adc.h)(0x592AC1D3)
+F (..\src\hard\uart.c)(0x592BC4C8)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
-I (..\src\hard\uart.h)(0x592787AD)
+I (..\src\hard\uart.h)(0x592BC5A1)
+F (..\src\hard\KEY.c)(0x592ECC6A)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (..\src\hard\KEY.H)(0x5927AE7E)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11XX.H)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (..\src\hard\delay.h)(0x592786AD)
+F (..\src\hard\i2c.c)(0x5927AEE1)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (..\src\hard\i2c.h)(0x5927AEE1)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11XX.h)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (..\src\hard\24c02.c)(0x5927B0BA)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\24c02.o --omf_browse .\objects\24c02.crf --depend .\objects\24c02.d)
+I (..\src\hard\24c02.h)(0x5927B0CC)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11XX.H)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (..\src\hard\i2c.h)(0x5927AEE1)
+F (..\src\hard\pwm.c)(0x5927B136)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (..\src\hard\pwm.h)(0x5927B136)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11XX.H)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (..\src\hard\beep.c)(0x5927B1B3)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\beep.o --omf_browse .\objects\beep.crf --depend .\objects\beep.d)
+I (..\src\hard\BEEP.H)(0x5927B1B3)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11XX.H)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+F (..\src\hard\ui.c)(0x59303296)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\ui.o --omf_browse .\objects\ui.crf --depend .\objects\ui.d)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h)(0x4CF35218)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x593012CD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\src\hard\KEY.h)(0x5927AE7E)
+I (..\src\hard\delay.h)(0x592786AD)
+I (..\src\user\temperature.h)(0x592EA22D)
+I (..\src\hard\oled.h)(0x5927EE12)
+I (..\src\hard\ui.h)(0x5927EEBF)
+I (..\src\hard\24c02.h)(0x5927B0CC)
+I (..\src\hard\i2c.h)(0x5927AEE1)
+I (..\src\hard\uart.h)(0x592BC5A1)
 F (RTE\Device\LPC1114FBD48_301\startup_LPC11xx.s)(0x4CF35218)(--cpu Cortex-M0+ -g --apcs=interwork -ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1"--list .\listings\startup_lpc11xx.lst --xref -o .\objects\startup_lpc11xx.o --depend .\objects\startup_lpc11xx.d)
-F (RTE\Device\LPC1114FBD48_301\system_LPC11xx.c)(0x4CF35218)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\system_lpc11xx.o --omf_browse .\objects\system_lpc11xx.crf --depend .\objects\system_lpc11xx.d)
+F (RTE\Device\LPC1114FBD48_301\system_LPC11xx.c)(0x4CF35218)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\user -I ..\src\hard -I ..\src\hard -I ..\src\hard -I ..\src\hard-ID:\LPC1114\project\out\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx-D__UVISION_VERSION="521" -D_RTE_-o .\objects\system_lpc11xx.o --omf_browse .\objects\system_lpc11xx.crf --depend .\objects\system_lpc11xx.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\LPC11xx.h)(0x4FF4FDF8)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)

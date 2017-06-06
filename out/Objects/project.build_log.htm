@@ -17,35 +17,39 @@ Library Manager: ArmAr.exe V5.06 update 3 (build 300)
 Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
 CPU DLL:         SARMCM3.DLL V5.21a
 Dialog DLL:      DARMCM1.DLL V1.14.0.0
-Target DLL:      UL2CM3.DLL V1.158.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
 Dialog DLL:      TARMCM1.DLL V1.10.0.0
  
 <h2>Project:</h2>
 D:\LPC1114\project\out\project.uvprojx
-Project File Date:  05/26/2017
+Project File Date:  05/31/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
-compiling delay.c...
 compiling main.c...
-..\src\user\main.c(8): warning:  #223-D: function "OLED_Init" declared implicitly
-  	OLED_Init();
-..\src\user\main.c: 1 warning, 0 errors
+compiling temperature.c...
+..\src\user\temperature.c(103): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  	sprintf (GcRcvBuf , "temp= %4f\r\n",t);
+..\src\user\temperature.c: 1 warning, 0 errors
 compiling oled.c...
 ..\src\hard\oled.c(618): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
   	sprintf(m,"%d",n);
 ..\src\hard\oled.c: 1 warning, 0 errors
-assembling startup_LPC11xx.s...
+compiling delay.c...
 compiling adc.c...
 compiling uart.c...
-..\src\hard\uart.c(10): warning:  #550-D: variable "Clear" was set but never used
-  	uint32_t DL_value,Clear;   // (?????Ö·?Ê½¶¨?å±?Á¿?â¾ö±????÷µ?Warning)                       
-..\src\hard\uart.c: 1 warning, 0 errors
+compiling KEY.c...
+compiling i2c.c...
+compiling 24c02.c...
+compiling pwm.c...
+compiling beep.c...
+assembling startup_LPC11xx.s...
+compiling ui.c...
 compiling system_LPC11xx.c...
 linking...
-Program Size: Code=1084 RO-data=248 RW-data=0 ZI-data=608  
-".\Objects\project.axf" - 0 Error(s), 3 Warning(s).
+Program Size: Code=13132 RO-data=2992 RW-data=1684 ZI-data=628  
+".\Objects\project.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -74,7 +78,7 @@ Package Vendor: Keil
       Include file:  Device\Include\LPC11xx\LPC11xx.h
       Source file:   Device\Source\ARM\startup_LPC11xx.s
       Source file:   Device\Source\system_LPC11xx.c
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

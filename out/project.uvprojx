@@ -15,7 +15,7 @@
         <TargetCommonOption>
           <Device>LPC1114FBD48/301</Device>
           <Vendor>NXP</Vendor>
-          <PackID>Keil.LPC1100_DFP.1.2.0</PackID>
+          <PackID>Keil.LPC1100_DFP.1.4.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x10000000,0x2000) IROM(0x00000000,0x8000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -125,6 +125,47 @@
             <HexOffset>0</HexOffset>
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
+          <Simulator>
+            <UseSimulator>0</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+            <RestoreSysVw>1</RestoreSysVw>
+          </Simulator>
+          <Target>
+            <UseTarget>1</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <RestoreTracepoints>1</RestoreTracepoints>
+            <RestoreSysVw>1</RestoreSysVw>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>6</TargetSelection>
+          <SimDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+            <Driver>Segger\JL2CM3.dll</Driver>
+          </TargetDlls>
         </DebugOption>
         <Utilities>
           <Flash1>
@@ -328,14 +369,11 @@
             <v6LangP>1</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\src\hard;..\src\hard;..\src\hard;..\src\hard;..\src\hard</IncludePath>
+              <IncludePath>..\src\hard;..\src\hard;..\src\hard;..\src\hard;..\src\hard;..\src\hard;..\src\hard;..\src\hard;..\src\user;..\src\hard;..\src\hard;..\src\hard;..\src\hard</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -348,7 +386,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -384,6 +421,11 @@
               <FileType>1</FileType>
               <FilePath>..\src\user\main.c</FilePath>
             </File>
+            <File>
+              <FileName>temperature.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\user\temperature.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -408,6 +450,36 @@
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\hard\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>KEY.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\hard\KEY.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\hard\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>24c02.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\hard\24c02.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\hard\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\hard\beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\hard\ui.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -438,18 +510,18 @@
       </component>
     </components>
     <files>
-      <file attr="config" category="source" condition="LPC11xx_Cxx ARMCC" name="Device\Source\ARM\startup_LPC11xx.s" version="1.0.0">
+      <file attr="config" category="sourceAsm" condition="Compiler ARMCC" name="Device\Source\ARM\startup_LPC11xx.s" version="1.0.0">
         <instance index="0">RTE\Device\LPC1114FBD48_301\startup_LPC11xx.s</instance>
-        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="LPC1100 CMSIS Device"/>
-        <package name="LPC1100_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.2.0"/>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="LPC11xx_Cxx CMSIS"/>
+        <package name="LPC1100_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.4.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" condition="LPC11xx_Cxx" name="Device\Source\system_LPC11xx.c" version="1.0.0">
+      <file attr="config" category="sourceC" name="Device\Source\system_LPC11xx.c" version="1.0.0">
         <instance index="0">RTE\Device\LPC1114FBD48_301\system_LPC11xx.c</instance>
-        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="LPC1100 CMSIS Device"/>
-        <package name="LPC1100_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.2.0"/>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="LPC11xx_Cxx CMSIS"/>
+        <package name="LPC1100_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.4.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>

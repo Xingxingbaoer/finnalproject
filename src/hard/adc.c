@@ -73,18 +73,37 @@ void ADC_Init(uint8_t Channel)
 /* º¯Êý¹¦ÄÜ£º¶ÁÈ¡µçÑ¹Öµ£¨AD7£©              */
 /* ³ö¿Ú²ÎÊý£ºadc_value, ¶Áµ½µÄµçÑ¹Öµ        */
 /********************************************/
-uint32_t ADC_Read(uint8_t Channel)
-{
-	uint32_t adc_value=0;
+//uint32_t ADC_Read(uint8_t Channel)
+//{
+//	uint32_t adc_value=0;
 
-	adc_value = ((LPC_ADC->DR[Channel]>>6)&0x3FF);		
-	adc_value = (adc_value*Vref)/1024; // ×ª»»ÎªÕæÕýµÄµçÑ¹Öµ
+//	adc_value = ((LPC_ADC->DR[Channel]>>6)&0x3FF);		
+//	adc_value = (adc_value*Vref)/1024; // ×ª»»ÎªÕæÕýµÄµçÑ¹Öµ
 
-	return adc_value;	  // ·µ»Ø½á¹û
-}
+//	return adc_value;	  // ·µ»Ø½á¹û
+//}
 
 
 //////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+/*º¯Êý¹¦ÄÜ£º ¼ÆËãNTCµÄµç×èÖµ£¨AD7£                       ©*/
+//////////////////////////////////////////////////////////
+uint32_t NTC_Read(uint8_t Channel)
+{
+	
+	uint32_t adc_value,R_ntc=0;
+	 
+
+	adc_value = ((LPC_ADC->DR[Channel]>>6)&0x3FF);		
+	adc_value = (adc_value*Vref)/1024; // ×ª»»ÎªÕæÕýµÄµçÑ¹Öµ
+	
+	
+	R_ntc =(adc_value * 10000)/(3300-adc_value);
+	
+	
+	return R_ntc;
 
 
+
+}
 

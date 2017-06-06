@@ -7,6 +7,11 @@
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\LPC1100_DFP\1.2.0\Device\Include\LPC11xx\system_LPC11xx.h
 .\objects\main.o: ..\src\hard\oled.h
+.\objects\main.o: ..\src\hard\ui.h
 .\objects\main.o: ..\src\hard\adc.h
-.\objects\main.o: ..\src\hard\uart.h
+.\objects\main.o: ..\src\hard\key.h
 .\objects\main.o: ..\src\hard\delay.h
+.\objects\main.o: ..\src\hard\uart.h
+.\objects\main.o: ..\src\hard\i2c.h
+.\objects\main.o: ..\src\hard\24c02.h
+.\objects\main.o: ..\src\user\temperature.h
